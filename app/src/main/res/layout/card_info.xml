@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".CardInfoActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_1x"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:drawableLeft="@drawable/card_small"
+            android:text="CARD"
+            android:textColor="@android:color/white"
+            android:textSize="36sp"
+            android:textStyle="bold|italic"
+            android:typeface="sans"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/login_using_fitbit_account"
+            android:layout_marginTop="105dp"
+            android:text="NAME ON CARD"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="normal"/>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="6sp"
+            android:text="First Last"
+            android:textColor="#9C9C9C"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_marginTop="168dp"
+            android:text="CARD NUMBER"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="normal"/>
+
+        <EditText
+            android:id="@+id/cardNumberInput"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/textView3"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:padding="6sp"
+            android:text="**** **** **** ****"
+            android:textColor="#9C9C9C"/>
+
+        <TextView
+            android:id="@+id/expDateLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cardNumberInput"
+            android:layout_below="@+id/cardNumberInput"
+            android:layout_marginTop="20dp"
+            android:text="EXPIRATION DATE"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="normal"/>
+
+        <EditText
+            android:id="@+id/expDateInput"
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/expDateLbl"
+            android:layout_alignStart="@+id/cardNumberInput"
+            android:layout_below="@+id/expDateLbl"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="6sp"
+            android:text="MM/YY"
+            android:textColor="#9C9C9C"/>
+
+        <TextView
+            android:id="@+id/csvLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/csvInput"
+            android:layout_alignTop="@+id/expDateLbl"
+            android:text="CSV"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="normal"/>
+
+        <EditText
+            android:id="@+id/csvInput"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editText"
+            android:layout_below="@+id/expDateLbl"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:padding="6sp"
+            android:text="###"
+            android:textColor="#9C9C9C"/>
+
+        <Button
+            android:id="@+id/login_using_fitbit_account"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="141dp"
+            android:background="#EC6321"
+            android:text="SAVE DONATION METHOD"/>
+
+        <Button
+            android:id="@+id/skip_enter_steps_manually_fitbit_button"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="85dp"
+            android:background="#EEEEEE"
+            android:onClick="onClickSkip"
+            android:text="SKIP, AND COMPLETE LATER"
+            android:textColor="#202020"/>
+
+        <ImageView
+            android:id="@+id/project_cat_logo_pos"
+            android:layout_width="220dp"
+            android:layout_height="53dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_marginBottom="18dp"
+            android:src="@drawable/project_cat_logo_pos"/>
+
+        <ImageView
+            android:id="@+id/wwf_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/project_cat_logo_pos"
+            android:layout_alignEnd="@+id/login_using_fitbit_account"
+            android:src="@drawable/wwf_logo_black_background"/>
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

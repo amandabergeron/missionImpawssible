@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_1x"/>
+
+        <TextView
+            android:id="@+id/invite_sponsors"
+            android:layout_width="225dp"
+            android:layout_height="101dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Invite Sponsors"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/sponsor_info"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/invite_sponsors"
+            android:layout_centerHorizontal="true"
+            android:text="You chose to be a sponsor for your team!"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/sponsor_info_2"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="128dp"
+            android:text="You will have a chance to confirm donation amount at the end of the challenge before any funds are transfered to World Wildlife Federation. The tigers thank you. "
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"/>
+
+
+        <ImageView
+            android:id="@+id/project_cat_logo_pos"
+            android:layout_width="220dp"
+            android:layout_height="53dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/checkBox"
+            android:layout_marginBottom="33dp"
+            android:src="@drawable/project_cat_logo_pos"/>
+
+        <ImageView
+            android:id="@+id/wwf_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/project_cat_logo_pos"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginEnd="48dp"
+            android:src="@drawable/wwf_logo_black_background"
+            />
+
+        <Button
+            android:id="@+id/copy_link"
+            android:layout_width="231dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="149dp"
+            android:background="#EC6321"
+            android:bottomLeftRadius="10dp"
+            android:bottomRightRadius="10dp"
+            android:text="Copy Link"
+            android:textColor="#FFFFFF"
+            android:topLeftRadius="10dp"
+            android:topRightRadius="10dp"/>
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="231dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="101dp"
+            android:background="#EEEEEE"
+            android:text="Next"
+            android:textColor="#202020"/>
+
+        <EditText
+            android:id="@+id/link_to_be_copied"
+            android:layout_width="231dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="196dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:inputType="textUri"
+            android:text="projectcat.com/missionimpaw..."/>
+
+        <ImageButton
+            android:id="@+id/share_social_media_icons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="224dp"
+            android:background="#80000000"
+            android:src="@drawable/share_link_icons"/>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/sponsor_info_2"
+            android:layout_marginStart="68dp"
+            android:checked="true"
+            android:shadowColor="#80000000"
+            android:text="I WANT TO SPONSOR MY TEAM"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#80000000"
+            android:textColorHint="#80000000"
+            android:buttonTint="#FFFFFF"
+            android:textColorLink="#80000000"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -12,13 +12,55 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ChooseDeviceActivity"
+                  android:label="choose_device"
+                  android:theme="@style/AppTheme.NoActionBar"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".AccountCreationActivity"
+                  android:label="account_creation"
+                  android:theme="@style/AppTheme.NoActionBar"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".CardInfoActivity"
+                  android:label="card_info"
+                  android:theme="@style/Theme.AppCompat"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".DonationMethodActivity"
+                  android:label="Donation Method"
+                  android:theme="@style/Theme.AppCompat"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".FitBitLoginActivity"
+                  android:label="Fitbit Login Activity"
+                  android:theme="@style/Theme.AppCompat"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ChooseYourChallengeActivity"
+                  android:label="Choose Your Challenge Activity"
+                  android:theme="@style/Theme.AppCompat"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".InviteSponsorActivity"
+                  android:label="Invite Sponsor"
+                  android:theme="@style/Theme.AppCompat"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ChooseDonationActivity"
+                  android:label="Choose Donation"
+                  android:theme="@style/Theme.AppCompat"
+                  android:screenOrientation="portrait">
+        </activity>
+
     </application>
 
 </manifest>

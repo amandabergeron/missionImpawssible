@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_1x"/>
+
+        <TextView
+            android:id="@+id/choose_your_challenge"
+            android:layout_width="174dp"
+            android:layout_height="178dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="40dp"
+            android:text="Choose \nYour Challenge"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/lets_get_started"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="181dp"
+            android:textColor="#FFFFFF"
+            android:text="Let's get started!"/>
+
+        <TextView
+            android:id="@+id/getting_started_info"
+            android:layout_width="329dp"
+            android:layout_height="73dp"
+            android:layout_below="@+id/choose_your_challenge"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:text="Start your own week-long fundraising challenge, or invite up to four teammates to help raise even more to protect our furry feline friends. "/>
+
+
+        <ImageView
+            android:id="@+id/project_cat_logo_pos"
+            android:layout_width="220dp"
+            android:layout_height="53dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/getting_started_info"
+            android:layout_marginBottom="29dp"
+            android:src="@drawable/project_cat_logo_pos"/>
+
+        <ImageView
+            android:id="@+id/wwf_logo"
+            android:src="@drawable/wwf_logo_black_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/project_cat_logo_pos"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginEnd="48dp"
+            />
+
+        <Button
+            android:id="@+id/team_challenge_button"
+            android:layout_width="231dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="166dp"
+            android:background="#EC6321"
+            android:bottomLeftRadius="10dp"
+            android:bottomRightRadius="10dp"
+            android:text="Start a Team Challenge"
+            android:textColor="#FFFFFF"
+            android:topLeftRadius="10dp"
+            android:topRightRadius="10dp"/>
+
+        <Button
+            android:id="@+id/solo_challenge_button"
+            android:layout_width="231dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="117dp"
+            android:background="#EEEEEE"
+            android:text="Start a Solo Challenge"
+            android:textColor="#202020"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

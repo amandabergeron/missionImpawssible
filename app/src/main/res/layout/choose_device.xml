@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="49dp">
+
+        <RelativeLayout
+            android:id="@+id/topText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_1x"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp"/>
+
+            <TextView
+                android:id="@+id/choose_device_text"
+                android:layout_width="wrap_content"
+                android:layout_height="99dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Choose Your \nDevice"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp"
+                android:textStyle="italic"
+                tools:layout_editor_absoluteX="34dp"
+                tools:layout_editor_absoluteY="16dp"/>
+
+            <Button
+                android:id="@+id/continue_without_device_button"
+                android:layout_width="231dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="118dp"
+                android:text="Continue Without Device"/>
+
+            <TextView
+                android:id="@+id/accountLoginPrompt"
+                android:layout_width="222dp"
+                android:layout_height="33dp"
+                android:layout_below="@+id/continue_without_device_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-118dp"
+                android:text="@string/already_have_an_account_login"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fitness_button_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="88dp">
+
+            <ImageButton
+                android:id="@+id/fitness_button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#80000000"
+                android:src="@drawable/applewatch"/>
+
+            <ImageButton
+                android:id="@+id/fitness_button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/fitness_button_1"
+                android:background="#80000000"
+                android:src="@drawable/phone"/>
+
+            <ImageButton
+                android:id="@+id/fitness_button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fitness_button_1"
+                android:layout_margin="5dp"
+                android:background="#80000000"
+                android:src="@drawable/fitbit"
+                android:onClick="onClickFitBit"
+                />
+
+            <ImageButton
+                android:id="@+id/fitness_button_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fitness_button_2"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/fitness_button_3"
+                android:background="#80000000"
+                android:src="@drawable/myfitness"
+                />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/project_cat_logo_pos"
+            android:layout_width="220dp"
+            android:layout_height="53dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="29dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/project_cat_logo_pos"/>
+
+        <ImageView
+            android:id="@+id/wwf_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/project_cat_logo_pos"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="48dp"
+            android:src="@drawable/wwf_logo_black_background"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
