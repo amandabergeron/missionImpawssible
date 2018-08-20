@@ -1,4 +1,4 @@
-package bergeron.mandi.missionimpawssible;
+package bergeron.mandi.missionimpawssible.Activites;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+
+import bergeron.mandi.missionimpawssible.R;
 
 public class AccountCreationActivity extends AppCompatActivity {
 

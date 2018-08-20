@@ -1,7 +1,9 @@
-package bergeron.mandi.missionimpawssible;
+package bergeron.mandi.missionimpawssible.Activites;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+
+import bergeron.mandi.missionimpawssible.R;
 
 public class DonationMethodActivity extends AppCompatActivity {
 

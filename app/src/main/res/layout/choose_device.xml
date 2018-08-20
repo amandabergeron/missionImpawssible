@@ -47,16 +47,6 @@
                 android:layout_marginBottom="118dp"
                 android:text="Continue Without Device"/>
 
-            <TextView
-                android:id="@+id/accountLoginPrompt"
-                android:layout_width="222dp"
-                android:layout_height="33dp"
-                android:layout_below="@+id/continue_without_device_button"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="-118dp"
-                android:text="@string/already_have_an_account_login"
-                android:textColor="#FFFFFF"
-                android:textSize="14sp"/>
 
         </RelativeLayout>
 
@@ -77,7 +67,7 @@
                 android:src="@drawable/applewatch"/>
 
             <ImageButton
-                android:id="@+id/fitness_button_2"
+                android:id="@+id/google_phone_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -100,7 +90,7 @@
                 android:id="@+id/fitness_button_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/fitness_button_2"
+                android:layout_below="@+id/google_phone_button"
                 android:layout_margin="5dp"
                 android:layout_toRightOf="@id/fitness_button_3"
                 android:background="#80000000"

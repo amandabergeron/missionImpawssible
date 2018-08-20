@@ -1,4 +1,4 @@
-package bergeron.mandi.missionimpawssible;
+package bergeron.mandi.missionimpawssible.Fragments;
 
 import android.support.v4.app.Fragment;
 

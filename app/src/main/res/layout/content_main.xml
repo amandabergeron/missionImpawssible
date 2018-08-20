@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".MainActivity"
+    tools:context=".Activites.MainActivity"
     tools:showIn="@layout/activity_main">
 
     <RelativeLayout
@@ -19,31 +19,50 @@
             android:src="@drawable/bg_1x"/>
 
         <TextView
-            android:id="@+id/welcome_text_app_name"
+            android:id="@+id/welcome_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="102dp"
-            android:text="@string/app_name_welcome"
+            android:layout_marginTop="75dp"
+            android:text="@string/welcome_to_mission_impawssible"
+            android:textColor="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/welcome_lets_get_started"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:text="@string/lets_get_started"
             android:textColor="#FFFFFF"
             android:textSize="30sp"
             android:textStyle="italic"/>
 
         <TextView
-            android:id="@+id/accountLoginPrompt"
-            android:layout_width="222dp"
-            android:layout_height="33dp"
-            android:layout_alignParentBottom="true"
+            android:id="@+id/getting_started_instructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="131dp"
-            android:text="@string/already_have_an_account_login"
+            android:text="Sign in with Google"
+            android:layout_marginTop="150dp"
+            android:layout_below="@id/welcome_lets_get_started"
             android:textColor="#FFFFFF"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="175dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/getting_started_instructions"
+            />
+
 
         <ImageView
             android:id="@+id/project_cat_logo_pos"
@@ -64,40 +83,31 @@
             android:layout_marginEnd="48dp"
             app:srcCompat="@drawable/wwf_logo_black_background"/>
 
-        <Button
-            android:id="@+id/sync_device_button"
-            android:layout_width="231dp"
-            android:layout_height="40dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="188dp"
-            android:background="#EC6321"
-            android:bottomLeftRadius="10dp"
-            android:bottomRightRadius="10dp"
-            android:text="Sync Device To Count Steps"
-            android:textColor="#FFFFFF"
-            android:topLeftRadius="10dp"
-            android:topRightRadius="10dp"/>
+        <!--<Button-->
+            <!--android:id="@+id/sync_device_button"-->
+            <!--android:layout_width="231dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="188dp"-->
+            <!--android:background="#EC6321"-->
+            <!--android:bottomLeftRadius="10dp"-->
+            <!--android:bottomRightRadius="10dp"-->
+            <!--android:text="Sync Device To Count Steps"-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--android:topLeftRadius="10dp"-->
+            <!--android:topRightRadius="10dp"/>-->
 
-        <Button
-            android:id="@+id/continue_without_device_button"
-            android:layout_width="231dp"
-            android:layout_height="40dp"
-            android:layout_centerInParent="true"
-            android:background="#EEEEEE"
-            android:text="Skip, Enter Steps Manually"
-            android:textColor="#202020"/>
+        <!--<Button-->
+            <!--android:id="@+id/continue_without_device_button"-->
+            <!--android:layout_width="231dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:background="#EEEEEE"-->
+            <!--android:text="Skip, Enter Steps Manually"-->
+            <!--android:textColor="#202020"/>-->
 
-        <TextView
-            android:id="@+id/welcome_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="41dp"
-            android:text="WELCOME TO"
-            android:textColor="#FFFFFF"
-            tools:text="WELCOME TO"/>
+
 
 
     </RelativeLayout>

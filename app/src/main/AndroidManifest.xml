@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".Activites.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait">
@@ -20,45 +20,55 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ChooseDeviceActivity"
+        <activity android:name=".Activites.ChooseDeviceActivity"
                   android:label="choose_device"
                   android:theme="@style/AppTheme.NoActionBar"
                   android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".AccountCreationActivity"
+        <activity android:name=".Activites.GoogleSignInActivity"
+            android:label="google_sign_in"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".Activites.AccountCreationActivity"
                   android:label="account_creation"
                   android:theme="@style/AppTheme.NoActionBar"
                   android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".CardInfoActivity"
+        <activity android:name=".Activites.CardInfoActivity"
                   android:label="card_info"
                   android:theme="@style/Theme.AppCompat"
                   android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".DonationMethodActivity"
+        <activity android:name=".Activites.DonationMethodActivity"
                   android:label="Donation Method"
                   android:theme="@style/Theme.AppCompat"
                   android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".FitBitLoginActivity"
+        <activity android:name=".Activites.FitBitLoginActivity"
                   android:label="Fitbit Login Activity"
                   android:theme="@style/Theme.AppCompat"
                   android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ChooseYourChallengeActivity"
+        <activity android:name=".Activites.ChooseYourChallengeActivity"
                   android:label="Choose Your Challenge Activity"
                   android:theme="@style/Theme.AppCompat"
                   android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".InviteSponsorActivity"
+        <activity android:name=".Activites.InviteSponsorActivity"
                   android:label="Invite Sponsor"
                   android:theme="@style/Theme.AppCompat"
                   android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ChooseDonationActivity"
+        <activity android:name=".Activites.ChooseDonationActivity"
                   android:label="Choose Donation"
                   android:theme="@style/Theme.AppCompat"
                   android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".Activites.StepTrackerActivity"
+            android:label="Track Deez Steps"
+            android:theme="@style/Theme.AppCompat"
+            android:screenOrientation="portrait">
         </activity>
 
     </application>
